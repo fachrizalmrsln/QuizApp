@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/titlebar2"></include>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#b4eeb4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:background="#b4eeb4">
+
+            <TextView
+                android:id="@+id/text1_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="Let Me Know"
+                android:textColor="#1b4030"
+                android:textSize="45dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/text2_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1_Profile"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="About You"
+                android:textColor="#1b4030"
+                android:textSize="45dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:id="@+id/RLName_Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2_Profile"
+                android:layout_margin="5dp"
+                android:background="@drawable/box2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TVName_Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:fontFamily="casual"
+                    android:text="Name :"
+                    android:textColor="#b4eeb4"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/ETName_Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/TVName_Profile"
+                    android:fontFamily="casual"
+                    android:hint="  (nickname)"
+                    android:padding="5dp"
+                    android:textColor="#b4eeb4"
+                    android:textColorHint="#b4eeb4"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RLName_Profile">
+
+                <RelativeLayout
+                    android:id="@+id/RLAge_Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/box2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TVAge_Profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:fontFamily="casual"
+                        android:text="From  :"
+                        android:textColor="#b4eeb4"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ETFrom_Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/TVAge_Profile"
+                        android:fontFamily="casual"
+                        android:hint="  (city)"
+                        android:padding="5dp"
+                        android:textColor="#b4eeb4"
+                        android:textColorHint="#b4eea0"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/RLAge_Profile"
+                    android:layout_marginBottom="150dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box2"
+                    android:onClick="Done"
+                    android:text="Done"
+                    android:textColor="#b4eeb4" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

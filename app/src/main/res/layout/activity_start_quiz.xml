@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b4eeb4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/titlebar5"></include>
+
+        <include
+            android:id="@+id/cardview2"
+            layout="@layout/titlebar8"></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rdy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Are you Ready?" />
+
+        <Button
+            android:id="@+id/mulai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go!" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
